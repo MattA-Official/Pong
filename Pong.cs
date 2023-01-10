@@ -1,14 +1,6 @@
 using System;
 using System.Threading;
 
-enum GameState
-{
-    MainMenu,
-    Playing,
-    Paused,
-    GameOver
-}
-
 namespace Pong
 {
     class Pong
@@ -93,7 +85,7 @@ namespace Pong
                         break;
                     case ConsoleKey.DownArrow:
                         rightPaddle.MoveDown();
-                        break;   
+                        break;
                     case ConsoleKey.Escape:
                         gameState = GameState.Paused;
                         break;
@@ -130,7 +122,6 @@ namespace Pong
             }
         }
 
-
         private void DrawPauseMenu()
         {
             Console.Clear();
@@ -138,7 +129,6 @@ namespace Pong
             Console.WriteLine("Press 'R' to resume");
             Console.WriteLine("Press 'Q' to quit");
         }
-
 
         void HandleMenuInput()
         {

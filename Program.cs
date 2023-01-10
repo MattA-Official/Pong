@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Pong
+﻿namespace Pong
 {
     class Program
     {
