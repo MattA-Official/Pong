@@ -15,6 +15,7 @@ namespace Pong
     {
         private Paddle leftPaddle;
         private Paddle rightPaddle;
+        private Ball ball;
         private GameState gameState;
 
         public void Start()
@@ -24,6 +25,8 @@ namespace Pong
             int maxPos = Console.WindowHeight - 1;
             leftPaddle = new Paddle(minPos, maxPos);
             rightPaddle = new Paddle(minPos, maxPos);
+
+            ball = new Ball();
 
             gameState = GameState.Playing;
 
